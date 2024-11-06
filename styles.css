@@ -1,0 +1,240 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Colores */
+:root {
+    --color-azul: #3A86FF;
+    --color-morado: #8338EC;
+    --color-naranja: #FF006E;
+    --color-gris-claro: #F5F5F5;
+    --color-gris-oscuro: #333;
+    --color-blanco: #FFF;
+}
+
+/* General */
+body {
+    background-color: var(--color-gris-claro);
+    color: var(--color-gris-oscuro);
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+    color: var(--color-gris-oscuro);
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-blanco);
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--color-azul);
+    color: var(--color-blanco);
+}
+
+header .logo h1 {
+    font-size: 1.5rem;
+    color: var(--color-blanco);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+.nav a {
+    color: var(--color-blanco);
+}
+
+.cta a {
+    background-color: var(--color-naranja);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+/* Sección Hero */
+#hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: var(--color-morado);
+    color: var(--color-blanco);
+}
+
+#hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+#hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.hero-cta a {
+    margin: 0.5rem;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: var(--color-naranja);
+}
+
+.btn-secondary {
+    background-color: var(--color-azul);
+}
+
+/* Sección Servicios */
+#servicios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 3rem 2rem;
+    background-color: var(--color-blanco);
+}
+
+.servicio {
+    flex: 1 1 200px;
+    max-width: 300px;
+    text-align: center;
+    margin: 1rem;
+    padding: 2rem;
+    background-color: var(--color-gris-claro);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.servicio img {
+    width: 50px;
+    margin-bottom: 1rem;
+}
+
+.servicio h4 {
+    color: var(--color-morado);
+    margin-bottom: 0.5rem;
+}
+
+/* Sección Testimonios */
+#testimonios {
+    padding: 3rem 2rem;
+    background-color: var(--color-azul);
+    color: var(--color-blanco);
+    text-align: center;
+}
+
+.testimonio {
+    max-width: 600px;
+    margin: 1rem auto;
+    padding: 1.5rem;
+    background-color: var(--color-morado);
+    border-radius: 5px;
+}
+
+.testimonio p {
+    font-style: italic;
+}
+
+.testimonio span {
+    display: block;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+/* Sección Beneficios */
+#beneficios {
+    padding: 3rem 2rem;
+    background-color: var(--color-blanco);
+    color: var(--color-gris-oscuro);
+}
+
+#beneficios h3 {
+    text-align: center;
+    color: var(--color-morado);
+    margin-bottom: 2rem;
+}
+
+#beneficios ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#beneficios li {
+    flex: 1 1 200px;
+    max-width: 300px;
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid var(--color-azul);
+    border-radius: 5px;
+}
+
+/* Sección Recursos Destacados */
+#recursos {
+    padding: 3rem 2rem;
+    background-color: var(--color-gris-claro);
+}
+
+.recurso {
+    margin: 1rem;
+    padding: 1.5rem;
+    background-color: var(--color-blanco);
+    border-left: 4px solid var(--color-azul);
+}
+
+.recurso h4 {
+    color: var(--color-morado);
+}
+
+/* CTA Final */
+#cta-final {
+    text-align: center;
+    padding: 3rem 2rem;
+    background-color: var(--color-naranja);
+    color: var(--color-blanco);
+}
+
+#cta-final h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+    padding: 2rem;
+    background-color: var(--color-azul);
+    color: var(--color-blanco);
+    text-align: center;
+}
+
+footer nav a {
+    color: var(--color-blanco);
+    margin: 0 1rem;
+}
+
+footer .social a {
+    margin: 0 0.5rem;
+}
+
+footer p {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
